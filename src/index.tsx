@@ -4,6 +4,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset';
+import { BrowserRouter } from 'react-router-dom';
 
 const GlobalStyle = createGlobalStyle`
   ${reset}
@@ -17,7 +18,6 @@ const GlobalStyle = createGlobalStyle`
   }
 
   html, body {
-    cursor: none;
     background-color: #e1dfdd;
   }
 
@@ -36,13 +36,14 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 const root = ReactDOM.createRoot(
-    // prettier-ignore
     document.getElementById('root') as HTMLElement
 );
 root.render(  
     <React.StrictMode>
-      <GlobalStyle />
-      <App />
+      <BrowserRouter>
+        <GlobalStyle />
+        <App />
+      </BrowserRouter>
     </React.StrictMode>
 );
 

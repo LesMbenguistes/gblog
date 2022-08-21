@@ -6,6 +6,10 @@
       "dom.iterable",
       "esnext"
     ],
+    "baseUrl": "src",
+    "paths": {
+      "@gblog/types": ["types/index.ts"]
+    },
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
