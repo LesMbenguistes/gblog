@@ -18,7 +18,8 @@ const GlobalStyle = createGlobalStyle`
   }
 
   html, body {
-    background-color: #e1dfdd;
+    background-color: #fff;
+    overflow-x: hidden;
   }
 
   * {
